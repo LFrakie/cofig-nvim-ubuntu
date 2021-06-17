@@ -35,16 +35,23 @@ set guioptions-=L
 imap hh <Esc>
 imap HH <Esc>2
 imap <C-c> <Esc>l
-
+nmap <C-c> a
 "Posicionarse al inicio o final de una linea
 nmap n 0 
 nmap m $
 
 
 "Salir de modo insertar y guardar
-imap hhw <Esc> :w <Enter>
-imap <C-s> <Esc>:w<Enter>
+imap hhw <Esc>:w<Enter>
+"Guardar y modos
+imap <C-s> <Esc>:w<Enter> 
+nmap <C-s> :w<Enter>
+"---Guardar y salir todo
 imap <C-s><C-s> <Esc>:wqa
+nmap <C-s><C-s> :wqa
+"cerrar y salir modos
+nmap <C-x> :qa
+nmap <C-x><C-x> :qa!
 
 
 "Salir de modo insert, guardar y subida r eapida mediante git GGG -low importance 
@@ -91,6 +98,8 @@ tnoremap <silent> <C-m><C-m> <C-\><C-n><C-w><C-+><C-w><C-+><C-w><C-+><C-w><C-+>i
 "Color rainbown corchetes y llaves 
 nmap <leader>rain :RainbowToggle<Enter>
 
+"######################################## GIT CONFIGS #################################
+
 "Git add .
 nmap <leader>ga :! git add .
 
@@ -115,11 +124,30 @@ nmap <leader>gu :! git pull
 "Git branch
 nmap <leader>gb :! git branch 
 
+"Git merge
+nmap <leader>gm :! git merge 
+
 "Git Fast Push To Master - Add with Commit -Update Low Importance
 nmap <leader>ggg :! git add . ; git commit -m "3g up L/I"<Enter> :! git push -u origin 
 "Experimental fow windows-----------------------------
+
 "imap hhwgc <Esc>:w <Enter>:terminal<Enter>git add . & git commit -m "GCG update & git push -u origin master
 imap hhwgc <Esc>:w<Enter>:! git add .<Enter> :! git commit -m "WGC up M/I" ; git push -u origin 
+nmap wgc :w<Enter>:! git add .<Enter> :! git commit -m "WGC up M/I" ; git push -u origin 
+"=========================================================
+
+"========== Git Banks Branches ===============  
+"BANCO 0 MASTER
+nmap <leader>g0 :! git checkout master 
+
+"BANCO 1 dev
+nmap g1 :! git checkout dev<Enter>
+
+"BANCO 2 test
+nmap g2 :! git checkout test<Enter>
+ 
+"BANCO 2 back
+nmap g3 :! git checkout back<Enter>
 
 
 "OPEN VN notions
