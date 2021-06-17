@@ -215,7 +215,7 @@ filetype plugin on
 "let g:python_host_prog ='/python27/python.exe'
 
 " ESTE DE ARRIBA ERA PERO EN LINUX DEBE SER OTRA RUTA
-
+"test text 
 
 "-----------------------------------------------------------------------------------------
 "Inteto de usar ruta de python
