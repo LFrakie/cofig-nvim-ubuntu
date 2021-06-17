@@ -117,7 +117,7 @@ nmap <leader>gb :! git branch
 
 "Git Fast Push To Master - Add with Commit -Update Low Importance
 nmap <leader>ggg :! git add . ; git commit -m "3g up L/I"<Enter> :! git push -u origin 
-
+"Experimental fow windows-----------------------------
 "Git GCG git customizable push
 "imap hhwgc <Esc>:w <Enter>:! git add . & git commit -m -update L/I- & git push -u origin 
 "imap hhwgc <Esc>:w <Enter>:terminal<Enter>git add . & git commit -m "GCG update & git push -u origin master
