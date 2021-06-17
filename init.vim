@@ -51,7 +51,7 @@ imap <C-s><C-s> <Esc>:wqa
 nmap <C-s><C-s> :wqa
 "cerrar y salir modos
 nmap <C-x> :qa
-nmap <C-x><C-x> :qa!
+nmap <C-x><C-x><C-x> :qa!
 
 
 "Salir de modo insert, guardar y subida r eapida mediante git GGG -low importance 
