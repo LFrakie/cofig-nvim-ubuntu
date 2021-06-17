@@ -162,7 +162,7 @@ let g:indentLine_fileTypeExclude=["nerdtree"]
 nmap <Leader>e :NERDTreeToggle<CR>
 
 "toggle close nerdtree
-"nmap <Leader>ee :NERDTreeToggleVCS<CR>
+nmap <Leader>ee :NERDTreeRefreshRoot<CR>
 
 "open cocExplorer 
 "Buscar dos carácteres con easymotion
